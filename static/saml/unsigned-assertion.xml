@@ -1,7 +1,7 @@
 <saml:Assertion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" ID="_d71a3a8e9fcc45c9e9d248ef7049393fc8f04e5f75" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Version="2.0" IssueInstant="{{issueInstant}}">
   <saml:Issuer>{{issuer}}</saml:Issuer>
   <saml:Subject>
-    <saml:NameID Format="urn:ibm:names:ITFIM:5.1:accessmanager">{{value}}</saml:NameID>
+    <saml:NameID Format="urn:ibm:names:ITFIM:5.1:accessmanager">{{nric}}</saml:NameID>
     <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
       <saml:SubjectConfirmationData NotOnOrAfter="2224-01-18T06:21:48Z" Recipient="{{recipient}}" InResponseTo="{{inResponseTo}}"/>
     </saml:SubjectConfirmation>
@@ -17,7 +17,7 @@
     </saml:AuthnContext>
   </saml:AuthnStatement>
   <saml:AttributeStatement>
-    <saml:Attribute Name="{{name}}" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+    <saml:Attribute Name="{{attributeName}}" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
       <saml:AttributeValue xsi:type="xs:string">{{value}}</saml:AttributeValue>
     </saml:Attribute>
   </saml:AttributeStatement>
